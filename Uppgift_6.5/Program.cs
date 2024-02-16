@@ -30,11 +30,7 @@ namespace Uppgift_6_5
         /// <returns>Talet med flest siffror</returns>
         static int Längst(int int1, int int2)
         {
-            if (int1.ToString().Length >= int2.ToString().Length)
-            {
-                return int1;
-            }
-            return int2;
+            return int.Parse(Längst(int1.ToString(), int2.ToString()));
         }
     }
 }
